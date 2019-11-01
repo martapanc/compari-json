@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class OrgJson {
 
-    private static final String INPUT_FILE = "src/main/resources/input.json";
+    public static final String INPUT_FILE = "src/main/resources/input.json";
 
     public static void createJSONObject() {
         JSONObject object = new JSONObject();

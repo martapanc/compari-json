@@ -1,131 +1,19 @@
-@*** Construct a JSONObject from a subset of another JSONObject.
-{"options": [
-  {
-    "price": 357456,
-    "car_type": "STANDARD"
-  },
-  {
-    "price": 576688,
-!    "car_type": "PEOPLE_CARRIER"
-  },
-  {
-    "price": 948566,
-(    "car_type": "LUXURY_PEOPLE_CARRIER"
-  },
-  {
-    "price": 651704,
-    "car_type": "MINIBUS"
-  },
-  {
-    "price": 416288,
-    "car_type": "EXECUTIVE"
-  },
-  {
-    "price": 660500,
-    "car_type": "LUXURY"
-  }
-]}
-8*** Read Json file, parse it to JSONObject and print it
-{
-#  "dropoff": "3.410632,-2.157533",
-  "options": [
-    {
-      "price": 357456,
-      "car_type": "STANDARD"
-    },
-    {
-      "price": 576688,
-#      "car_type": "PEOPLE_CARRIER"
-    },
-    {
-      "price": 948566,
-*      "car_type": "LUXURY_PEOPLE_CARRIER"
-    },
-    {
-      "price": 651704,
-      "car_type": "MINIBUS"
-    },
-    {
-      "price": 416288,
-      "car_type": "EXECUTIVE"
-    },
-    {
-      "price": 660500,
-      "car_type": "LUXURY"
-    }
-  ],
-"  "pickup": "3.410632,-2.157533",
-  "supplier_name": "DAVE",
-  "supplier_id": 1
-}
-P*** Read Json file, parse it to JSONObject, add and remove content and print it
-{
-#  "dropoff": "3.410632,-2.157533",
-  "options": [
-    {
-      "price": 357456,
-      "car_type": "STANDARD"
-    },
-    {
-      "price": 576688,
-#      "car_type": "PEOPLE_CARRIER"
-    },
-    {
-      "price": 651704,
-      "car_type": "MINIBUS"
-    },
-    {
-      "price": 416288,
-      "car_type": "EXECUTIVE"
-    },
-    {
-      "price": 660500,
-      "car_type": "LUXURY"
-    },
-    {
-      "price": 23623,
-      "car_type": "MINIBUS"
-    }
-  ],
-  "pickup": "1.0,1.0",
-  "supplier_name": "DAVE",
-  "supplier_id": 1
-}
--*** Create a complex JSONObject and print it
-{
-  "options": [
-    {
-      "price": 12345,
-#      "car_type": "PEOPLE_CARRIER"
-    },
-    {
-      "price": 23623,
-      "car_type": "MINIBUS"
-    }
-  ],
-  "supplier_name": "Mark",
-  "supplier_id": 1
-}
-=*** Construct a JSONObject from an Object using bean getters
-{
-  "dropOff": "3.3,4.4",
-  "name": "Dave",
-  "options": [
-    {
-      "carType": "LUXURY",
-      "price": 1234
-    },
-    {
-      "carType": "STANDARD",
-      "price": 5678
-    }
-  ],
-  "pickup": "1.1,2.2",
-
-  "id": 2
-}
-'*** Construct a JSONObject from a Map.
-{
-  "supplier_name": "Dave",
-  "supplier_id": "1"
-}
+0*** Serialise string to Json format with toJson
+{
+  "supplier_name": "Dave",
+  "supplier_id": 2,
+  "pickup": "1.1,2.2",
+  "dropoff": "3.3,4.4",
+  "options": [
+    {
+      "car_type": "LUXURY",
+      "price": 1234
+    },
+    {
+      "car_type": "STANDARD",
+      "price": 5678
+    }
+  ]
+}
+4*** Deserialise Json string to object with fromJson
+ùSupplierOffer{name='DAVE', id=1, pickup='3.410632,-2.157533', dropOff='3.410632,-2.157533', options=[Option{car_type='STANDARD', price=357456}, Option{car_type='PEOPLE_CARRIER', price=576688}, Option{car_type='LUXURY_PEOPLE_CARRIER', price=948566}, Option{car_type='MINIBUS', price=651704}, Option{car_type='EXECUTIVE', price=416288}, Option{car_type='LUXURY', price=660500}]}
