@@ -1,4 +1,4 @@
-package objects;
+package objects.orgJson;
 
 public class Option {
 
@@ -8,5 +8,13 @@ public class Option {
     public Option(String carType, long price) {
         this.carType = carType;
         this.price = price;
+    }
+
+    public String getCarType() {
+        return carType;
+    }
+
+    public long getPrice() {
+        return price;
     }
 }

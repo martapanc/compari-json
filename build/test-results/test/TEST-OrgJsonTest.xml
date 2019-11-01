@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OrgJsonTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-11-01T12:00:14" hostname="C02V91P8G8WL" time="0.038">
+<testsuite name="OrgJsonTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-11-01T14:30:58" hostname="C02V91P8G8WL" time="0.062">
   <properties/>
-  <testcase name="Read Json file, parse it to JSONObject and print it" classname="OrgJsonTest" time="0.03"/>
-  <testcase name="Read Json file, parse it to JSONObject, add and remove content and print it" classname="OrgJsonTest" time="0.004"/>
-  <testcase name="Create a complex JSONObject and print it" classname="OrgJsonTest" time="0.001"/>
-  <system-out><![CDATA[*** Read Json file, parse it to JSONObject and print it
+  <testcase name="Construct a JSONObject from a subset of another JSONObject." classname="OrgJsonTest" time="0.029"/>
+  <testcase name="Read Json file, parse it to JSONObject and print it" classname="OrgJsonTest" time="0.01"/>
+  <testcase name="Read Json file, parse it to JSONObject, add and remove content and print it" classname="OrgJsonTest" time="0.003"/>
+  <testcase name="Create a complex JSONObject and print it" classname="OrgJsonTest" time="0.002"/>
+  <testcase name="Construct a JSONObject from an Object using bean getters" classname="OrgJsonTest" time="0.011"/>
+  <testcase name="Construct a JSONObject from a Map." classname="OrgJsonTest" time="0.001"/>
+  <system-out><![CDATA[*** Construct a JSONObject from a subset of another JSONObject.
+{"options": [
+  {
+    "price": 357456,
+    "car_type": "STANDARD"
+  },
+  {
+    "price": 576688,
+    "car_type": "PEOPLE_CARRIER"
+  },
+  {
+    "price": 948566,
+    "car_type": "LUXURY_PEOPLE_CARRIER"
+  },
+  {
+    "price": 651704,
+    "car_type": "MINIBUS"
+  },
+  {
+    "price": 416288,
+    "car_type": "EXECUTIVE"
+  },
+  {
+    "price": 660500,
+    "car_type": "LUXURY"
+  }
+]}
+*** Read Json file, parse it to JSONObject and print it
 {
   "dropoff": "3.410632,-2.157533",
   "options": [
@@ -84,6 +114,28 @@
   ],
   "supplier_name": "Mark",
   "supplier_id": 1
+}
+*** Construct a JSONObject from an Object using bean getters
+{
+  "dropOff": "3.3,4.4",
+  "name": "Dave",
+  "options": [
+    {
+      "carType": "LUXURY",
+      "price": 1234
+    },
+    {
+      "carType": "STANDARD",
+      "price": 5678
+    }
+  ],
+  "pickup": "1.1,2.2",
+  "id": 2
+}
+*** Construct a JSONObject from a Map.
+{
+  "supplier_name": "Dave",
+  "supplier_id": "1"
 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

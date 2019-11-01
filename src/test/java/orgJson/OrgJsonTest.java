@@ -33,9 +33,24 @@ public class OrgJsonTest {
     }
 
     @Test
+    @DisplayName("Construct a JSONObject from an Object using bean getters")
     public void serialiseObjectToJson(TestInfo testInfo) {
-        printTestDescription(testInfo)
-        ;
+        printTestDescription(testInfo);
+        OrgJson.serialiseObjectToJson();
+    }
+
+    @Test
+    @DisplayName("Construct a JSONObject from a subset of another JSONObject.")
+    public void createJSONObjectFromSubset(TestInfo testInfo) {
+        printTestDescription(testInfo);
+        OrgJson.createJSONObjectFromSubset();
+    }
+
+    @Test
+    @DisplayName("Construct a JSONObject from a Map.")
+    public void createJSONObjectFromMap(TestInfo testInfo) {
+        printTestDescription(testInfo);
+        OrgJson.createJSONObjectFromMap();
     }
 
     private void printTestDescription(TestInfo testInfo) {

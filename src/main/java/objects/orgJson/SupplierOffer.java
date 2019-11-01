@@ -1,4 +1,4 @@
-package objects;
+package objects.orgJson;
 
 import java.util.List;
 
@@ -16,5 +16,25 @@ public class SupplierOffer {
         this.pickup = pickup;
         this.dropOff = dropOff;
         this.options = options;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getPickup() {
+        return pickup;
+    }
+
+    public String getDropOff() {
+        return dropOff;
+    }
+
+    public List<Option> getOptions() {
+        return options;
     }
 }

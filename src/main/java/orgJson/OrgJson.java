@@ -1,13 +1,15 @@
 package orgJson;
 
-import objects.Option;
-import objects.SupplierOffer;
+import objects.orgJson.Option;
+import objects.orgJson.SupplierOffer;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import utils.Utils;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class OrgJson {
 
@@ -38,6 +40,7 @@ public class OrgJson {
         printJson(object);
     }
 
+    // Construct a JSONObject from an Object using bean getters
     public static void serialiseObjectToJson() {
         List<Option> options = new ArrayList<>();
         options.add(new Option("LUXURY", 1234));
@@ -45,6 +48,23 @@ public class OrgJson {
         SupplierOffer supplierOffer = new SupplierOffer("Dave", 2, "1.1,2.2", "3.3,4.4", options);
         JSONObject object = new JSONObject(supplierOffer);
         printJson(object);
+    }
+
+    // Construct a JSONObject from an subset of a JSONObject
+    public static void createJSONObjectFromSubset() {
+        JSONObject object = new JSONObject(Utils.readInput(INPUT_FILE));
+        JSONObject subset = new JSONObject(object, new String[]{"options"});
+
+        printJson(subset);
+    }
+
+    // Construct a JSONObject from a map
+    public static void createJSONObjectFromMap() {
+        Map<String, String> map = new HashMap<>();
+        map.put("supplier_name", "Dave");
+        map.put("supplier_id", "1");
+
+        printJson(new JSONObject(map));
     }
 
     private static void printJson(JSONObject object) {
