@@ -1,0 +1,81 @@
+8*** Read Json file, parse it to JSONObject and print it
+{
+#  "dropoff": "3.410632,-2.157533",
+  "options": [
+    {
+      "price": 357456,
+      "car_type": "STANDARD"
+    },
+    {
+      "price": 576688,
+#      "car_type": "PEOPLE_CARRIER"
+    },
+    {
+      "price": 948566,
+*      "car_type": "LUXURY_PEOPLE_CARRIER"
+    },
+    {
+      "price": 651704,
+      "car_type": "MINIBUS"
+    },
+    {
+      "price": 416288,
+      "car_type": "EXECUTIVE"
+    },
+    {
+      "price": 660500,
+      "car_type": "LUXURY"
+    }
+  ],
+"  "pickup": "3.410632,-2.157533",
+  "supplier_name": "DAVE",
+  "supplier_id": 1
+}
+P*** Read Json file, parse it to JSONObject, add and remove content and print it
+{
+#  "dropoff": "3.410632,-2.157533",
+  "options": [
+    {
+      "price": 357456,
+      "car_type": "STANDARD"
+    },
+    {
+      "price": 576688,
+#      "car_type": "PEOPLE_CARRIER"
+    },
+    {
+      "price": 651704,
+      "car_type": "MINIBUS"
+    },
+    {
+      "price": 416288,
+      "car_type": "EXECUTIVE"
+    },
+    {
+      "price": 660500,
+      "car_type": "LUXURY"
+    },
+    {
+      "price": 23623,
+      "car_type": "MINIBUS"
+    }
+  ],
+  "pickup": "1.0,1.0",
+  "supplier_name": "DAVE",
+  "supplier_id": 1
+}
+-*** Create a complex JSONObject and print it
+{
+  "options": [
+    {
+      "price": 12345,
+#      "car_type": "PEOPLE_CARRIER"
+    },
+    {
+      "price": 23623,
+      "car_type": "MINIBUS"
+    }
+  ],
+  "supplier_name": "Mark",
+  "supplier_id": 1
+}
