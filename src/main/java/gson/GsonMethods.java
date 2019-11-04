@@ -26,7 +26,17 @@ public class GsonMethods {
         String input = Utils.readInput(OrgJson.INPUT_FILE);
         Gson gson = new Gson();
 
-        printJson(gson.fromJson(input, SupplierOffer.class));
+        SupplierOffer offer = gson.fromJson(input, SupplierOffer.class);
+        printJson(offer);
+
+        List<Option> options = offer.getOptions();
+        String optionString = gson.toJson(options);
+        List list = gson.fromJson(optionString, List.class);
+        printJson(list);
+
+        String singleOptionString = gson.toJson(list.get(0));
+        Option option = gson.fromJson(singleOptionString, Option.class);
+        printJson(option);
     }
 
     private static void printJson(String gson) {

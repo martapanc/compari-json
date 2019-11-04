@@ -1,19 +1,0 @@
-0*** Serialise string to Json format with toJson
-{
-  "supplier_name": "Dave",
-  "supplier_id": 2,
-  "pickup": "1.1,2.2",
-  "dropoff": "3.3,4.4",
-  "options": [
-    {
-      "car_type": "LUXURY",
-      "price": 1234
-    },
-    {
-      "car_type": "STANDARD",
-      "price": 5678
-    }
-  ]
-}
-4*** Deserialise Json string to object with fromJson
-ùSupplierOffer{name='DAVE', id=1, pickup='3.410632,-2.157533', dropOff='3.410632,-2.157533', options=[Option{car_type='STANDARD', price=357456}, Option{car_type='PEOPLE_CARRIER', price=576688}, Option{car_type='LUXURY_PEOPLE_CARRIER', price=948566}, Option{car_type='MINIBUS', price=651704}, Option{car_type='EXECUTIVE', price=416288}, Option{car_type='LUXURY', price=660500}]}

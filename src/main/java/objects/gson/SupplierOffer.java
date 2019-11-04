@@ -34,4 +34,8 @@ public class SupplierOffer {
                 ", options=" + options +
                 '}';
     }
+
+    public List<Option> getOptions() {
+        return options;
+    }
 }
