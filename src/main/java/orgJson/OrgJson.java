@@ -67,6 +67,12 @@ public class OrgJson {
         printJson(new JSONObject(map));
     }
 
+    public static void deserialiseJSONObjectToObject() {
+        // org.json does not provide such functionality directly.
+        // The indirect way of doing it would be to retrieve each value from the JSON and perform custom deserialization
+        // on that value before assigning it to an object field.
+    }
+
     private static void printJson(JSONObject object) {
         System.out.println(object.toString(2));
     }
