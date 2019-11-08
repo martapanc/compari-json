@@ -4,13 +4,11 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import objects.gson.Option;
 import objects.gson.SupplierOffer;
 import orgJson.OrgJson;
 import utils.Utils;
 
-import javax.json.Json;
 import java.util.ArrayList;
 import java.util.List;
 
