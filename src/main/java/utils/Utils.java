@@ -1,5 +1,7 @@
 package utils;
 
+import org.junit.jupiter.api.TestInfo;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -24,5 +26,9 @@ public class Utils {
         }
 
         return content.toString();
+    }
+
+    public static void printTestDescription(TestInfo testInfo) {
+        System.out.println("*** " + testInfo.getDisplayName());
     }
 }

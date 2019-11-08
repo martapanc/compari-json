@@ -7,6 +7,8 @@ import org.junit.jupiter.api.TestInfo;
 import org.junit.platform.runner.JUnitPlatform;
 import org.junit.runner.RunWith;
 
+import static utils.Utils.printTestDescription;
+
 @RunWith(JUnitPlatform.class)
 public class OrgJsonTest {
 
@@ -50,9 +52,5 @@ public class OrgJsonTest {
     public void createJSONObjectFromMap(TestInfo testInfo) {
         printTestDescription(testInfo);
         OrgJson.createJSONObjectFromMap();
-    }
-
-    private void printTestDescription(TestInfo testInfo) {
-        System.out.println("*** " + testInfo.getDisplayName());
     }
 }

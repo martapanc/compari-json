@@ -6,6 +6,8 @@ import org.junit.jupiter.api.TestInfo;
 import org.junit.platform.runner.JUnitPlatform;
 import org.junit.runner.RunWith;
 
+import static utils.Utils.printTestDescription;
+
 @RunWith(JUnitPlatform.class)
 public class JavaxJsonTest {
 
@@ -36,9 +38,4 @@ public class JavaxJsonTest {
         printTestDescription(testInfo);
         JavaxJson.readWithJsonParser();
     }
-
-    private void printTestDescription(TestInfo testInfo) {
-        System.out.println("*** " + testInfo.getDisplayName());
-    }
-
 }
