@@ -23,6 +23,20 @@ public class GsonMethodsTest {
         GsonMethods.deserialiseToObject();
     }
 
+    @Test
+    @DisplayName("Create a JsonObject manually nesting JsonObjects and JsonArrays")
+    public void createWithJsonArrayAndJsonObject(TestInfo info) {
+        printTestDescription(info);
+        GsonMethods.createWithJsonArrayAndJsonObject();
+    }
+
+    @Test
+    @DisplayName("Create a JsonObject by parsing a json file")
+    public void createWithJsonObjectAndParsingFile(TestInfo info) {
+        printTestDescription(info);
+        GsonMethods.createWithJsonObjectAndParsingFile();
+    }
+
     private void printTestDescription(TestInfo testInfo) {
         System.out.println("*** " + testInfo.getDisplayName());
     }
