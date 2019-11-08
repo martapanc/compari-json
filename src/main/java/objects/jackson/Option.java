@@ -1,12 +1,11 @@
 package objects.jackson;
 
+import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Option {
 
-    @JsonProperty("car_type")
-    String carType;
-    @JsonProperty("price")
+    private String carType;
     private long price;
 
     public Option(String carType, long price) {
@@ -22,5 +21,15 @@ public class Option {
                 "carType='" + carType + '\'' +
                 ", price=" + price +
                 '}';
+    }
+
+    @JsonGetter("car_type")
+    public String getCarType() {
+        return carType;
+    }
+
+    @JsonGetter("price")
+    public long getPrice() {
+        return price;
     }
 }
