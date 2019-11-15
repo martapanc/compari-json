@@ -15,7 +15,14 @@ public class GensonMethodsTest {
     @DisplayName("Serialize Java object to Json")
     public void serialiseToJson(TestInfo info) {
         printTestDescription(info);
-        GensonMethods.serialiseToJson();
+        GensonMethods.serialiseObjectToJson();
+    }
+
+    @Test
+    @DisplayName("Serialize Map to Json")
+    public void serialiseMapToJson(TestInfo info) {
+        printTestDescription(info);
+        GensonMethods.serialiseMapToJson();
     }
 
     @Test
@@ -25,4 +32,10 @@ public class GensonMethodsTest {
         GensonMethods.deserialiseToObject();
     }
 
+    @Test
+    @DisplayName("Deserialize Json to Map")
+    public void deserialiseToMap(TestInfo info) {
+        printTestDescription(info);
+        GensonMethods.deserialiseToMap();
+    }
 }

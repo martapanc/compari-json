@@ -58,6 +58,7 @@ Resources:
 * [Getting started](http://genson.io/GettingStarted/)
 * [Genson Tutorial](https://self-learning-java-tutorial.blogspot.com/2016/04/genson-tutorial.html)
 * [Baeldung examples](https://www.baeldung.com/java-json#genson)
+* [Javadoc](http://genson.io/Documentation/Javadoc/)
 
 ### To do
 * Json.simple
