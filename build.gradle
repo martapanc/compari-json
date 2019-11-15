@@ -31,4 +31,6 @@ dependencies {
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.10.0'
 
     compile group: 'com.cedarsoftware', name: 'json-io', version: '4.11.1'
+
+    compile group: 'com.owlike', name: 'genson', version: '1.6'
 }

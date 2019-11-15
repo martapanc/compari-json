@@ -48,6 +48,16 @@ Resources:
 * [Javadoc](https://www.javadoc.io/doc/com.cedarsoftware/json-io/latest/com/cedarsoftware/util/io/package-summary.html)
 * [Experiments with Json-io](https://versprite.com/blog/application-security/experiments-with-json-io-serialization-mass-assignment-and-general-java-object-wizardry/)
 
+
+## Genson
+Repo: https://github.com/owlike/genson
+
+Documentation: http://genson.io/Documentation/UserGuide/
+
+Resources:
+* [Getting started](http://genson.io/GettingStarted/)
+* [Genson Tutorial](https://self-learning-java-tutorial.blogspot.com/2016/04/genson-tutorial.html)
+* [Baeldung examples](https://www.baeldung.com/java-json#genson)
+
 ### To do
-* Genson
 * Json.simple
