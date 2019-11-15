@@ -60,5 +60,11 @@ Resources:
 * [Baeldung examples](https://www.baeldung.com/java-json#genson)
 * [Javadoc](http://genson.io/Documentation/Javadoc/)
 
-### To do
-* Json.simple
+## JSON.simple
+Repo: https://github.com/fangyidong/json-simple
+
+Documentation: https://code.google.com/archive/p/json-simple/   
+
+Resources: 
+* [Example](https://www.journaldev.com/12668/json-simple-example)
+* [Read and write JSON](https://www.mkyong.com/java/json-simple-example-read-and-write-json/)

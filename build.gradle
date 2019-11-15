@@ -33,4 +33,6 @@ dependencies {
     compile group: 'com.cedarsoftware', name: 'json-io', version: '4.11.1'
 
     compile group: 'com.owlike', name: 'genson', version: '1.6'
+
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
 }
