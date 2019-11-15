@@ -39,8 +39,15 @@ Resources:
 * [More annotations](https://www.baeldung.com/jackson-advanced-annotations)
 * [Jackson vs Gson](https://www.baeldung.com/jackson-vs-gson)
 
+## Json-io
+Repo: https://github.com/jdereg/json-io 
+
+Documentation: https://github.com/jdereg/json-io/blob/master/user-guide.md
+
+Resources:
+* [Javadoc](https://www.javadoc.io/doc/com.cedarsoftware/json-io/latest/com/cedarsoftware/util/io/package-summary.html)
+* [Experiments with Json-io](https://versprite.com/blog/application-security/experiments-with-json-io-serialization-mass-assignment-and-general-java-object-wizardry/)
 
 ### To do
-* Json-io
 * Genson
 * Json.simple

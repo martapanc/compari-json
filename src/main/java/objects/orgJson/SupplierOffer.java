@@ -37,4 +37,15 @@ public class SupplierOffer {
     public List<Option> getOptions() {
         return options;
     }
+
+    @Override
+    public String toString() {
+        return "SupplierOffer{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", pickup='" + pickup + '\'' +
+                ", dropOff='" + dropOff + '\'' +
+                ", options=" + options +
+                '}';
+    }
 }

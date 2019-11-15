@@ -2,7 +2,7 @@ package objects.orgJson;
 
 public class Option {
 
-    String carType;
+    private String carType;
     private long price;
 
     public Option(String carType, long price) {
@@ -16,5 +16,13 @@ public class Option {
 
     public long getPrice() {
         return price;
+    }
+
+    @Override
+    public String toString() {
+        return "Option{" +
+                "carType='" + carType + '\'' +
+                ", price=" + price +
+                '}';
     }
 }
